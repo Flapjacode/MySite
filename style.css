@@ -1,0 +1,89 @@
+/* Sidebar Hidden State */
+.sidebar-hidden {
+    display: none;
+    z-index: 2;
+    width: 300px;
+    padding-top: 10%;
+}
+
+/* Header Image */
+.header-image img {
+    width: 100%;
+    min-height: 450px;
+    max-height: 500px;
+}
+
+/* Team Section */
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 22%;
+    min-width: 200px;
+}
+
+.team-img {
+    width: 35%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Goals Layout */
+.goals-container {
+    padding: 64px 16px;
+}
+
+.goals-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.goals-left,
+.goals-right {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.full-size-widget {
+    height: 100%;
+    width: 100%;
+}
+
+/* Paragraph Indent */
+p {
+    text-indent: 30px;
+}
+
+/* Quicklink Button Container */
+.quicklink-container {
+    position: relative;
+    padding: 20px 0;
+}
+
+.quicklink-container a {
+    position: absolute;
+    top: -28px;
+    left: 24px;
+}
+
+/* Contact Form */
+.contact-form label {
+    margin-top: 12px;
+    display: block;
+}
+
+/* Scroll To Top Button */
+.to-top-btn {
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
+}
+
+.to-top-btn span {
+    padding: 8px;
+}
