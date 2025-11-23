@@ -3,11 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <!-- Mobile-friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO -->
     <title>0xDreams | Web3 Tools, Market Analytics & Digital Business Solutions</title>
     <meta name="description"
         content="0xDreams provides Web3 tools, crypto analytics, business strategies, e-commerce integration, passive income systems, and digital marketing powered by AI.">
@@ -15,7 +12,7 @@
         content="Web3, Crypto, Solana, Business Strategy, E-commerce, AI Marketing, Passive Income, Trading, Investments">
     <link rel="canonical" href="https://flapjacode.github.io/0xDreams/">
 
-    <!-- OpenGraph (social) -->
+    <!-- OpenGraph -->
     <meta property="og:title" content="0xDreams | Web3 Tools & Crypto Insights">
     <meta property="og:description"
         content="Unlock business growth with Web3 strategies, AI tools, crypto analytics, e-commerce, and digital marketing.">
@@ -41,22 +38,21 @@
     }
     </script>
 
-    <!-- External Styles -->
+    <!-- Styles -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Defer Jupiter (performance upgrade) -->
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://s3.tradingview.com">
+    <link rel="preconnect" href="https://terminal.jup.ag">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Jupiter Terminal -->
     <script defer src="https://terminal.jup.ag/main-v2.js"></script>
-
-    <!-- Performance preconnect -->
-<link rel="preconnect" href="https://s3.tradingview.com">
-<link rel="preconnect" href="https://terminal.jup.ag">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
+    <script defer src="https://terminal.jup.ag/wallets-v2.js"></script>
 </head>
-
 
 <body id="myPage">
 
@@ -65,7 +61,7 @@
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">
             Close <i class="fa fa-remove"></i>
         </a>
-        <a href="https://docs.solanalabs.com/cli/install" class="w3-bar-item w3-button">SolanaCLI</a>
+        <a href="https://docs.solanalabs.com/cli/install" class="w3-bar-item w3-button">Solana CLI</a>
         <a href="http://jup.ag" class="w3-bar-item w3-button">Jup.ag</a>
         <a href="http://tradingview.com/" class="w3-bar-item w3-button">Trading View</a>
         <a href="https://www.moonpay.com/" class="w3-bar-item w3-button">Moonpay</a>
@@ -75,14 +71,8 @@
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-theme-d2 w3-left-align">
-
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
-                onclick="openNav()"><i class="fa fa-bars"></i></a>
-
-            <a href="#" class="w3-bar-item w3-button w3-teal">
-                <i class="fa fa-home w3-margin-right"></i>0xDreams
-            </a>
-
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>0xDreams</a>
             <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
             <a href="#goals" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Goals</a>
             <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
@@ -97,10 +87,7 @@
                 </div>
             </div>
 
-            <a href="https://www.torrentz.eu.com/#gsc.tab=0"
-                class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal">
-                <i class="fa fa-search"></i> Alt Search
-            </a>
+            <a href="https://www.torrentz.eu.com/#gsc.tab=0" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal"><i class="fa fa-search"></i> Alt Search</a>
         </div>
 
         <!-- Mobile Navbar -->
@@ -113,6 +100,7 @@
         </div>
     </div>
 
+    <!-- Wallet Connect -->
     <button id="wallet-btn" class="w3-button w3-green w3-right">Connect Wallet</button>
 
     <!-- Header Image -->
@@ -121,273 +109,148 @@
             <img src="https://i.ibb.co/WcgcdKZ/0xDreams.png" alt="0xDreams" loading="lazy">
         </a>
         <div class="w3-container w3-display-bottomleft w3-margin-bottom">
-            <button class="w3-button w3-xlarge w3-theme w3-hover-teal"
-                onclick="document.getElementById('id01').style.display='block'">
+            <button class="w3-button w3-xlarge w3-theme w3-hover-teal" onclick="document.getElementById('id01').style.display='block'">
                 Nostalgia Simulator
             </button>
         </div>
-    </div>
-
-<script type="text/javascript"
-    src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-{
-   "symbols": [
-       {"proName": "BITSTAMP:BTCUSD", "title": "Bitcoin"},
-       {"proName": "BITSTAMP:ETHUSD", "title": "Ethereum"},
-       {"description": "Solana", "proName": "BINANCE:SOLUSDT"},
-       {"description": "PEPE", "proName": "BINANCE:PEPEUSDT"},
-       {"description": "Polygon", "proName": "COINBASE:MATICUSD"},
-       {"description": "Hedera", "proName": "BYBIT:HBARUSDT"},
-       {"description": "Bonk", "proName": "BYBIT:BONKUSDT"},
-       {"description": "RATS", "proName": "MEXC:RATSUSDT"},
-       {"description": "FIL EUR", "proName": "COINBASE:FILEUR"},
-       {"description": "Shib EUR", "proName": "BITSTAMP:SHIBEUR"},
-       {"description": "DYDX", "proName": "BINGX:DYDXUSDT.PS"},
-       {"description": "SLERF", "proName": "BINGX:SLERFUSDT.P"}
-   ],
-   "showSymbolLogo": true,
-   "displayMode": "adaptive",
-   "colorTheme": "dark",
-   "locale": "en"
-}
-</script>
-
     </div>
 
     <!-- Modal -->
     <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-top">
             <header class="w3-container w3-teal">
-                <span class="w3-button w3-teal w3-display-topright" onclick="document.getElementById('id01').style.display='none'">
-                    <i class="fa fa-remove"></i>
-                </span>
+                <span class="w3-button w3-teal w3-display-topright" onclick="document.getElementById('id01').style.display='none'"><i class="fa fa-remove"></i></span>
                 <h4>Listen! You're about to travel to another Link...</h4>
                 <h5>It's dangerous to go alone! Take this 🗡</h5>
             </header>
-
             <div class="w3-container">
                 <p><b>Menu</b></p>
                 <p><a class="w3-text-teal" href="https://soundcloud.com/admiror">Music</a></p>
                 <p><a class="w3-text-teal" href="https://flapjacode.github.io/0xDreamscape/">Start Quest...</a></p>
                 <p><a class="w3-text-teal" href="https://lhohq.info/">DO NOT CLICK!</a></p>
             </div>
-
             <footer class="w3-container w3-teal">
                 <p>⚠ Trigger Warning: disturbing content at last link.</p>
             </footer>
         </div>
     </div>
 
-    <!-- TEAM SECTION -->
+    <!-- Team Section -->
     <div class="w3-container w3-padding-64 w3-center" id="team">
         <h2>About</h2>
         <p>Contact to join team:</p>
-
-            <div class="team-card">
-                <img src="https://i.ibb.co/fMGPt0V/20210503-161711.jpg" class="team-img" loading="lazy">
-                <h3>Matt Shannon</h3>
-                <p>Lead Analyst & Advisor</p>
-            </div>
-
+        <div class="team-card">
+            <img src="https://i.ibb.co/fMGPt0V/20210503-161711.jpg" class="team-img" loading="lazy">
+            <h3>Matt Shannon</h3>
+            <p>Lead Analyst & Advisor</p>
         </div>
-   
-
-    <!-- Quicklinks -->
-    <div class="w3-container quicklink-container">
-        <a onclick="w3_open()" class="w3-button w3-xlarge w3-square w3-teal">QuiklinkTools</a>
     </div>
 
-    <!-- GOALS -->
-    <div id="goals" class="w3-theme-l1 goals-container">
+    <!-- Quicklink Tools -->
+    <div class="w3-container quicklink-container">
+        <a onclick="w3_open()" class="w3-button w3-xlarge w3-square w3-teal">Quiklink Tools</a>
+    </div>
 
+    <!-- Goals Section -->
+    <div id="goals" class="w3-theme-l1 goals-container">
         <div class="goals-grid">
             <div class="goals-left">
                 <h2><b>Unlocking Success in the Digital Era</b></h2>
                 <p>At our core, we are a team of innovators helping individuals and businesses transition into new digital strategies...</p>
-
-                <!-- (Content unchanged for brevity – your full text is preserved) -->
-
             </div>
-
             <div class="goals-right">
-               <script type="text/javascript"
-    src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-{
-    "autosize": true,
-    "symbol": "COINBASE:BTCUSD",
-    "interval": "120",
-    "timezone": "Etc/UTC",
-    "theme": "dark",
-    "style": "1",
-    "locale": "en",
-    "allow_symbol_change": true,
-    "studies": [
-        "STD;Donchian_Channels",
-        "STD;Ichimoku%1Cloud",
-        "STD;MACD"
-    ]
-}
-</script>
-
-                </div>
+                <div id="chart-container"></div>
             </div>
         </div>
-
-        <p class="goals-paragraph">
-            <!-- Your long marketing paragraph preserved exactly -->
-        </p>
-
     </div>
 
     <!-- Jupiter Terminal -->
     <div id="integrated-terminal"></div>
 
-    <!-- Timeline Widget -->
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript"
-    src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-{
-    "feedMode": "all_symbols",
-    "colorTheme": "dark",
-    "displayMode": "adaptive",
-    "locale": "en",
-    "width": "100%",
-    "height": "100%"
-}
-</script>
-
+    <!-- Swap Section -->
+    <div class="swap-box w3-container w3-padding-32">
+        <h2>Swap Tokens</h2>
+        <jupiter-terminal
+            endpoint="https://rpc.ankr.com/solana"
+            integrated-wallet="true"
+            theme="dark"
+            display-mode="widget"
+            platform-fee-bps="0"
+            strict-token-list="false">
+        </jupiter-terminal>
     </div>
 
-    <!-- Pricing -->
-    <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-        <h2>PRICING</h2>
-        <p><a href="https://flapjacode.github.io/0xDP/">Choose a pricing plan.</a></p>
-
-        <button class="w3-button w3-teal w3-padding-large"
-            onclick="window.location.href='https://flapjacode.github.io/0xDP/'">
-            <i class="fa fa-check"></i> Sign Up
-        </button>
-        <b> for free access to tools, support, learning, and more.</b>
+    <!-- Token Balances -->
+    <div class="balances-box w3-container w3-padding-32">
+        <h2>Your Token Balances</h2>
+        <div id="balances"></div>
     </div>
 
-    <!-- CONTACT -->
+    <!-- Send Tokens -->
+    <div class="send-box w3-container w3-padding-32">
+        <h2>Send Tokens</h2>
+        <input id="send-address" class="w3-input" placeholder="Recipient Address">
+        <input id="send-amount" class="w3-input" placeholder="Amount">
+        <button id="send-sol-btn" class="w3-button w3-blue">Send SOL</button>
+        <button id="send-spl-btn" class="w3-button w3-green">Send SPL</button>
+        <p id="send-status"></p>
+    </div>
+
+    <!-- Custom Swap -->
+    <div class="custom-dex w3-container w3-padding-32">
+        <h2>Custom Swap</h2>
+        <input id="swap-from-mint" placeholder="From Mint" class="w3-input">
+        <input id="swap-to-mint" placeholder="To Mint" class="w3-input">
+        <input id="swap-amount" placeholder="Amount" class="w3-input">
+        <button id="swap-btn" class="w3-button w3-purple">Swap</button>
+        <p id="swap-result"></p>
+    </div>
+
+    <!-- Contact -->
     <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
         <div class="w3-row">
-
             <div class="w3-col m5">
                 <h3>Contact Us</h3>
                 <p><i class="fa fa-map-marker w3-text-teal"></i> California, US</p>
                 <p><i class="fa fa-phone w3-text-teal"></i> +1 279 244 8417</p>
                 <p><i class="fa fa-envelope-o w3-text-teal"></i> flapjack_finance@proton.me</p>
             </div>
-
             <div class="w3-col m7">
-                <form class="w3-container w3-card-4 w3-white contact-form"
-                    action="mailto:flapjack_finance@proton.me" method="post">
+                <form class="w3-container w3-card-4 w3-white contact-form" action="mailto:flapjack_finance@proton.me" method="post">
                     <label>Name</label>
                     <input class="w3-input" type="text" name="Name" required>
-
                     <label>Email</label>
                     <input class="w3-input" type="text" name="Email" required>
-
                     <label>Message</label>
                     <input class="w3-input" type="text" name="Message" required>
-
                     <input class="w3-check" type="checkbox" checked name="Like">
                     <label>Just Feedback</label>
-
                     <button class="w3-button w3-right w3-theme" type="submit">Send</button>
                 </form>
             </div>
-
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
         <h4>Follow Us</h4>
-
         <a class="w3-button w3-large w3-teal"><i class="fa fa-facebook"></i></a>
         <a class="w3-button w3-large w3-teal" href="http://x.com/flapjacks4all"><i class="fa fa-twitter"></i></a>
         <a class="w3-button w3-large w3-teal"><i class="fa fa-google-plus"></i></a>
         <a class="w3-button w3-large w3-teal"><i class="fa fa-instagram"></i></a>
         <a class="w3-button w3-large w3-teal"><i class="fa fa-linkedin"></i></a>
-
         <p>Powered by w3.css & Solana</p>
-
-        <div class="to-top-btn">
-            <a href="#myPage" class="w3-button w3-theme">
-                <i class="fa fa-chevron-circle-up w3-xlarge"></i>
-            </a>
-        </div>
+        <div class="to-top-btn"><a href="#myPage" class="w3-button w3-theme"><i class="fa fa-chevron-circle-up w3-xlarge"></i></a></div>
     </footer>
+
+    <!-- JS -->
+    <script type="module" src="script.js"></script>
     <script>
-document.addEventListener("DOMContentLoaded", async () => {
-
-    const { WalletsModal } = window.JupiterWallets;
-
-    const walletsModal = new WalletsModal({
-        onConnect: (publicKey) => {
-            document.getElementById("wallet-btn").innerText = 
-                publicKey.toString().slice(0, 4) + "..." + publicKey.toString().slice(-4);
-        }
-    });
-
-    document.getElementById("wallet-btn").onclick = () => {
-        walletsModal.open();
-    };
-
-});
-</script>
-
-
-    <!-- External JS -->
-    
-    <div class="swap-box">
-  <h2>Swap Tokens</h2>
-  <jupiter-terminal
-    endpoint="https://rpc.ankr.com/solana"
-    integrated-wallet="true"
-    theme="dark"
-    display-mode="widget"
-    platform-fee-bps="0"
-    strict-token-list="false">
-</jupiter-terminal>
-
-</div>
-
-<script src="https://terminal.jup.ag/wallets-v2.js"></script>
-
-<div class="balances-box">
-  <h2>Your Token Balances</h2>
-  <div id="balances"></div>
-</div>
-
-<div class="send-box">
-  <h2>Send Tokens</h2>
-
-  <input id="send-address" class="w3-input" placeholder="Recipient Address">
-  <input id="send-amount" class="w3-input" placeholder="Amount">
-
-  <button id="send-sol-btn" class="w3-button w3-blue">Send SOL</button>
-  <button id="send-spl-btn" class="w3-button w3-green">Send SPL</button>
-
-  <p id="send-status"></p>
-</div>
-
-<div class="custom-dex">
-    <h2>Custom Swap</h2>
-
-    <input id="swap-from-mint" placeholder="From Mint (e.g. So111...)" class="w3-input">
-    <input id="swap-to-mint" placeholder="To Mint" class="w3-input">
-    <input id="swap-amount" placeholder="Amount" class="w3-input">
-
-    <button id="swap-btn" class="w3-button w3-purple">Swap</button>
-    <p id="swap-result"></p>
-</div>
-
-<script src="script.js"></script>
+        // Sidebar & Mobile Nav
+        function w3_open() { document.getElementById("mySidebar").style.display = "block"; }
+        function w3_close() { document.getElementById("mySidebar").style.display = "none"; }
+        function openNav() { document.getElementById("navDemo").classList.toggle("w3-show"); }
+    </script>
 
 </body>
 </html>
