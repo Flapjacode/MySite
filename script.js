@@ -1,13 +1,12 @@
 // DOM Ready (faster than window.onload)
 document.addEventListener("DOMContentLoaded", () => {
 
-   window.Jupiter.init({
-    displayMode: "integrated",
-    integratedTargetId: "integrated-terminal",
-    endpoint: "https://rpc.ankr.com/solana",
-    enableWallet: true,
-    strictTokenList: false
-});
+    // Jupiter Terminal
+    window.Jupiter.init({
+        displayMode: "integrated",
+        integratedTargetId: "integrated-terminal",
+        endpoint: "http://192.168.1.88:8899/"
+    });
 
 });
 
