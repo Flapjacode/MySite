@@ -87,3 +87,59 @@ p {
 .to-top-btn span {
     padding: 8px;
 }
+/* ---------------------------- */
+/* MOBILE OPTIMIZATION OVERHAUL */
+/* ---------------------------- */
+
+@media (max-width: 900px) {
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 90%;
+        text-align: center;
+    }
+
+    .team-img {
+        width: 45%;
+    }
+
+    .goals-grid {
+        flex-direction: column;
+    }
+
+    .goals-left,
+    .goals-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header-image img {
+        min-height: 260px;
+        max-height: 340px;
+        object-fit: cover;
+    }
+
+    .quicklink-container a {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-img {
+        width: 60%;
+    }
+
+    p {
+        text-indent: 15px;
+        font-size: 15px;
+    }
+
+    button, .w3-button {
+        font-size: 15px !important;
+        padding: 10px 12px !important;
+    }
+}
