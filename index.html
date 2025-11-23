@@ -336,7 +336,37 @@
         strict-token-list="false">
   </jupiter-terminal>
 </div>
+
 <script src="https://terminal.jup.ag/main-v2.js"></script>
+<script src="https://terminal.jup.ag/wallets-v2.js"></script>
+
+<div class="balances-box">
+  <h2>Your Token Balances</h2>
+  <div id="balances"></div>
+</div>
+
+<div class="send-box">
+  <h2>Send Tokens</h2>
+
+  <input id="send-address" class="w3-input" placeholder="Recipient Address">
+  <input id="send-amount" class="w3-input" placeholder="Amount">
+
+  <button id="send-sol-btn" class="w3-button w3-blue">Send SOL</button>
+  <button id="send-spl-btn" class="w3-button w3-green">Send SPL</button>
+
+  <p id="send-status"></p>
+</div>
+
+<div class="custom-dex">
+    <h2>Custom Swap</h2>
+
+    <input id="swap-from-mint" placeholder="From Mint (e.g. So111...)" class="w3-input">
+    <input id="swap-to-mint" placeholder="To Mint" class="w3-input">
+    <input id="swap-amount" placeholder="Amount" class="w3-input">
+
+    <button id="swap-btn" class="w3-button w3-purple">Swap</button>
+    <p id="swap-result"></p>
+</div>
 
 
 </body>
